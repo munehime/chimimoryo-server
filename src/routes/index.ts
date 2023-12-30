@@ -1,14 +1,18 @@
 import Router from "@koa/router";
-import api from "./api";
-import type { Context } from "koa";
+import authRouter from "./auth";
+import usersRouter from "./users";
+import forumsRouter from "./forums";
+import type { ParameterizedContext } from "koa";
 
 const router = new Router();
 
 router.get("/", handleRoot);
 
-router.use(api.routes(), api.allowedMethods());
+router.use(authRouter.routes(), authRouter.allowedMethods());
+router.use(usersRouter.routes(), usersRouter.allowedMethods());
+router.use(forumsRouter.routes(), forumsRouter.allowedMethods());
 
-function handleRoot(ctx: Context) {
+function handleRoot(ctx: ParameterizedContext) {
     ctx.body = "hello!";
 }
 

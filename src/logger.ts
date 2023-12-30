@@ -20,12 +20,12 @@ export default winston.createLogger({
     transports: [
         new winston.transports.Console({ level: "silly" }),
         new winston.transports.DailyRotateFile({
-            filename: path.join(__dirname, "../..", "/logs", "%DATE%.log"),
+            filename: path.join(__dirname, "../", "/logs", "%DATE%.log"),
             datePattern: "YYYY-MM-DD",
         }),
         new winston.transports.File({
             level: "error",
-            filename: path.join(__dirname, "../..", "/logs", "errors.log"),
+            filename: path.join(__dirname, "../", "/logs", "errors.log"),
         }),
     ],
 });

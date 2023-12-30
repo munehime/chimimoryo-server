@@ -1,0 +1,50 @@
+[
+  {
+    "forum_id": 1,
+    "title": "A",
+    "description": "",
+    "category": "songs",
+    "latest_post": {
+      "$oid": "658c279a4ba4c81d8dd7d50b"
+    },
+    "created_at": {
+      "$date": "2023-12-27T13:33:14.121Z"
+    },
+    "updated_at": {
+      "$date": "2023-12-27T13:33:14.121Z"
+    },
+    "__v": 0
+  },
+  {
+    "forum_id": 2,
+    "title": "B",
+    "description": "",
+    "category": "songs",
+    "latest_post": {
+      "$oid": "658c279a4ba4c81d8dd7d50b"
+    },
+    "created_at": {
+      "$date": "2023-12-27T13:33:14.121Z"
+    },
+    "updated_at": {
+      "$date": "2023-12-27T13:33:14.121Z"
+    },
+    "__v": 0
+  },
+  {
+    "forum_id": 3,
+    "title": "C",
+    "description": "",
+    "category": "songs",
+    "latest_post": {
+      "$oid": "658c279a4ba4c81d8dd7d50b"
+    },
+    "created_at": {
+      "$date": "2023-12-27T13:33:14.121Z"
+    },
+    "updated_at": {
+      "$date": "2023-12-27T13:33:14.121Z"
+    },
+    "__v": 0
+  }
+]
